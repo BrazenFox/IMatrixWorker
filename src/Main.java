@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         IMatrixWorkerImpl m = new IMatrixWorkerImpl();
-        double[][] A = {{1,2},
+        double[][] A = {{1.1,2},
                         {3,6}};
 
         double[][] B = {{1,2,5,6},
@@ -16,6 +16,13 @@ public class Main {
                         {0,3,4,1,-5}};
 
         System.out.println(m.determinant(C));
+
+
+        Matrix m1 = new Matrix(A);
+
+        System.out.println(m1.toString());
+
+        System.out.println(m1.hashCode());
 
     }
 }
