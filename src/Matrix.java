@@ -1,5 +1,5 @@
 public class Matrix {
-    private double[][] matrix;
+    private final double[][] matrix;
     private final int rows;
     private final int columns;
 
@@ -11,10 +11,6 @@ public class Matrix {
 
     public double[][] getMatrix() {
         return matrix;
-    }
-
-    public void setMatrix(double[][] matrix) {
-        this.matrix = matrix;
     }
 
     public int getRows() {
