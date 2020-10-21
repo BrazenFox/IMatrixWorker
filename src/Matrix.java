@@ -39,7 +39,8 @@ public class Matrix {
     public boolean equals(Object obj) {
         if (!(obj instanceof Matrix)) {
             return false;
-        } else {
+        }
+        else {
             Matrix obj1 = (Matrix) obj;
             if (obj1.getRows() == this.getRows() && obj1.getColumns() == this.getColumns()) {
                 for (int i = 0; i < this.getRows(); i++) {
