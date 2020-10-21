@@ -19,8 +19,6 @@ public class Main {
                 {0, 3, 4, 1, -5}};
 
         System.out.println(m.determinant(C));
-        System.out.println((Arrays.deepToString(m.multiply(A, A))));
-
 
     }
 }
