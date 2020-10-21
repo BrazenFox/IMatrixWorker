@@ -2,9 +2,9 @@ public class IMatrixWorkerImpl implements IMatrixWorker {
 
     @Override
     public void print(double[][] m) {
-        for (int i = 0; i < m.length; i++) {
+        for (double[] doubles : m) {
             for (int j = 0; j < m[0].length; j++) {
-                System.out.print(m[i][j] + " ");
+                System.out.print(doubles[j] + " ");
             }
             System.out.println();
         }
@@ -12,9 +12,7 @@ public class IMatrixWorkerImpl implements IMatrixWorker {
 
     @Override
     public boolean haveSameDimension(double[][] m1, double[][] m2) {
-        if (m1.length == m2.length && m1[0].length == m2[0].length) {
-            return true;
-        } else return false;
+        return m1.length == m2.length && m1[0].length == m2[0].length;
     }
 
     @Override
