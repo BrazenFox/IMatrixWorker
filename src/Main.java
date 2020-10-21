@@ -1,6 +1,7 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
-
         IMatrixWorkerImpl m = new IMatrixWorkerImpl();
 
         double[][] A = {{1.1, 2},
@@ -18,6 +19,7 @@ public class Main {
                 {0, 3, 4, 1, -5}};
 
         System.out.println(m.determinant(C));
+        System.out.println((Arrays.deepToString(m.multiply(A, A))));
 
 
     }
