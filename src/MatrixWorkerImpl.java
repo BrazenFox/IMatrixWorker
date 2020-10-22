@@ -1,4 +1,4 @@
-public class IMatrixWorkerImpl implements IMatrixWorker {
+public class MatrixWorkerImpl implements IMatrixWorker {
 
     @Override
     public void print(double[][] m) {

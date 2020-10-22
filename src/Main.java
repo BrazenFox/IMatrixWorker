@@ -1,8 +1,6 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        IMatrixWorkerImpl m = new IMatrixWorkerImpl();
+        MatrixWorkerImpl m = new MatrixWorkerImpl();
 
         double[][] A = {{1.1, 2},
                 {3, 6}};
