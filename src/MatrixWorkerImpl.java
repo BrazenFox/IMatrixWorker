@@ -82,6 +82,4 @@ public class MatrixWorkerImpl implements IMatrixWorker {
 
         } else throw new IllegalArgumentException("Cannot calc determinant of non-square matrix.");
     }
-
-
 }
