@@ -42,7 +42,6 @@ public class MatrixWorkerImpl implements IMatrixWorker {
         } else throw new IllegalArgumentException("Matrices must be the same size.");
     }
 
-
     @Override
     public double[][] multiply(double[][] m1, double[][] m2) {
         if (m1[0].length == m2.length) {
